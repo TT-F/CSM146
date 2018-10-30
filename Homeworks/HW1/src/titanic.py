@@ -270,10 +270,10 @@ def main():
     
     
     #========================================
-    # part a: plot histograms of each feature
-    # print('Plotting...')
-    # for i in range(d) :
-    #     plot_histogram(X[:,i], y, Xname=Xnames[i], yname=yname)
+    #part a: plot histograms of each feature
+    print('Plotting...')
+    for i in range(d) :
+        plot_histogram(X[:,i], y, Xname=Xnames[i], yname=yname)
 
        
     #========================================
@@ -389,7 +389,7 @@ def main():
         plt.xlabel('K')
         plt.ylabel('10-Fold Cross Validation Average Error')
         plt.title('K-NN Classifier 10-Fold Cross Validation\nFor Titanic Data')
-        plt.savefig("Problem4.2-f.pdf")
+        plt.savefig("Problem4.2-f.png")
         plt.clf()
     ### ========== TODO : END ========== ###
     
@@ -418,7 +418,7 @@ def main():
         plt.ylabel('Average Error')
         plt.legend(loc='lower left')
         plt.title('Max-Depth Decision Tree Classifier 80/20 Cross Validation\nFor Titanic Data')
-        plt.savefig("Problem4.2-g.pdf")
+        plt.savefig("Problem4.2-g.png")
         plt.clf()
 
     
@@ -478,7 +478,7 @@ def main():
         plt.ylabel('Average Error')
         plt.legend(loc='lower right')
         plt.title('Learning Rate of 7-NN and Max Depth 6 Decision Tree\nFor Titanic Data')
-        plt.savefig("Problem4.2-h.pdf")
+        plt.savefig("Problem4.2-h.png")
         plt.clf()
 
 
