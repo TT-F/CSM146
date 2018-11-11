@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="656f5273-da1a-4bd5-a28f-2e675a7b398d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Homeworks/HW1/src/titanic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homeworks/HW1/src/titanic.py" afterDir="false" />
+    <list default="true" id="656f5273-da1a-4bd5-a28f-2e675a7b398d" name="Default Changelist" comment="HW3 Added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homeworks/HW2/code/data/regression_test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homeworks/HW2/code/data/regression_train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homeworks/HW2/code/src/regression.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homeworks/HW3/cs14618F_hw2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homeworks/HW3/data/regression_test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homeworks/HW3/data/regression_train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homeworks/HW3/src/regression.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +18,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CSM146$titanic.coverage" NAME="titanic Coverage Results" MODIFIED="1540591122783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homeworks/HW1/src" />
+    <SUITE FILE_PATH="coverage/CSM146$titanic.coverage" NAME="titanic Coverage Results" MODIFIED="1541884776929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homeworks/HW1/src" />
+    <SUITE FILE_PATH="coverage/CSM146$regression__1_.coverage" NAME="regression (1) Coverage Results" MODIFIED="1541899098405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homeworks/HW2/src" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -31,74 +39,72 @@
     <session id="297536881">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="1" />
+          <entry key="csv" value="3" />
           <entry key="md" value="1" />
-          <entry key="py" value="8" />
+          <entry key="py" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSV" value="2" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="8" />
+          <entry key="Python" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="25" />
-          <entry key="py" value="2905" />
-          <entry key="txt" value="20" />
+          <entry key="Python Console" value="153" />
+          <entry key="py" value="4288" />
+          <entry key="regression (1)" value="55" />
+          <entry key="txt" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="20" />
-          <entry key="Python" value="2930" />
+          <entry key="PLAIN_TEXT" value="29" />
+          <entry key="Python" value="4496" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="CSM146" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Homeworks/HW1/src/titanic.py">
+        <entry file="file://$PROJECT_DIR$/Homeworks/HW2/src/regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="483" lean-forward="true" selection-start-line="483" selection-end-line="483" />
+            <state relative-caret-position="206">
+              <caret line="152" column="22" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="22" />
               <folding>
-                <element signature="e#112#123#0" expanded="true" />
+                <element signature="e#93#102#0" expanded="true" />
+                <marker date="1541899096479" expanded="true" signature="7547:7556" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Homeworks/HW1/data/titanic_train.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="49" selection-start-column="41" selection-end-column="49" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Homeworks/HW2/src/regression_train.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Homeworks/HW1/src/util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Homeworks/HW2/data/regression_train.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
         </entry>
       </file>
     </leaf>
@@ -115,6 +121,14 @@
       <find>plt</find>
       <find>error</find>
       <find>random</find>
+      <find>plot_data</find>
+      <find>print</find>
+      <find>self.coef</find>
+      <find>cost</find>
+      <find>number of itera</find>
+      <find>g</find>
+      <find>generate_poly</find>
+      <find>predict</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,6 +140,8 @@
       <list>
         <option value="$PROJECT_DIR$/Homeworks/HW1/src/__init__.py" />
         <option value="$PROJECT_DIR$/Homeworks/HW1/src/titanic.py" />
+        <option value="$PROJECT_DIR$/Homeworks/HW3/src/regression.py" />
+        <option value="$PROJECT_DIR$/Homeworks/HW2/src/regression.py" />
       </list>
     </option>
   </component>
@@ -162,20 +178,27 @@
               <item name="CSM146" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSM146" type="462c0819:PsiDirectoryNode" />
               <item name="Homeworks" type="462c0819:PsiDirectoryNode" />
-              <item name="HW1" type="462c0819:PsiDirectoryNode" />
+              <item name="HW2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CSM146" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSM146" type="462c0819:PsiDirectoryNode" />
               <item name="Homeworks" type="462c0819:PsiDirectoryNode" />
-              <item name="HW1" type="462c0819:PsiDirectoryNode" />
+              <item name="HW2" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CSM146" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSM146" type="462c0819:PsiDirectoryNode" />
               <item name="Homeworks" type="462c0819:PsiDirectoryNode" />
-              <item name="HW1" type="462c0819:PsiDirectoryNode" />
+              <item name="HW2" type="462c0819:PsiDirectoryNode" />
+              <item name="Plots" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSM146" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSM146" type="462c0819:PsiDirectoryNode" />
+              <item name="Homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="HW2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -197,7 +220,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Homeworks/HW2/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -211,7 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.titanic">
+  <component name="RunManager" selected="Python.regression (1)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="CSM146" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -226,6 +254,44 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="regression (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CSM146" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Homeworks/HW2/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Homeworks/HW2/src/regression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CSM146" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Homeworks/HW3/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Homeworks/HW3/src/regression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -281,9 +347,13 @@
     <list>
       <item itemvalue="Python.titanic" />
       <item itemvalue="Python.util" />
+      <item itemvalue="Python.regression" />
+      <item itemvalue="Python.regression (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.regression (1)" />
+        <item itemvalue="Python.regression" />
         <item itemvalue="Python.titanic" />
         <item itemvalue="Python.util" />
       </list>
@@ -307,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540535872712</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="HW3 Added">
+      <created>1541878708633</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1541878708633</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -321,14 +398,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49946523" visible="true" weight="0.14285715" />
-      <window_info id="Structure" order="1" sideWeight="0.5005348" side_tool="true" visible="true" weight="0.14285715" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49760765" visible="true" weight="0.14652015" />
+      <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.14468865" />
+      <window_info id="Favorites" order="2" sideWeight="0.50239235" side_tool="true" weight="0.14468865" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Python Console" order="2" weight="0.32941177" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.501221" side_tool="true" weight="0.315508" />
+      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.498779" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="2" sideWeight="0.508547" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.491453" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4993895" weight="0.32941177" />
@@ -341,7 +419,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49920255" visible="true" weight="0.32967034" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49920255" weight="0.32967034" />
       <window_info anchor="right" x="0" y="0" width="370" height="827" id="Documentation" order="4" sideWeight="0.50079745" side_tool="true" weight="0.32967034" />
       <window_info anchor="right" id="Database" order="5" weight="0.32967034" />
     </layout>
@@ -390,7 +468,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Coding Part Finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Coding Part Finished" />
+    <MESSAGE value="HW3 Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW3 Added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Notes/Lecture_10_1.md">
@@ -398,6 +477,19 @@
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homeworks/HW1/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homeworks/HW1/src/titanic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="483" selection-start-line="483" selection-end-line="483" />
+          <folding>
+            <element signature="e#112#123#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -415,22 +507,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Homeworks/HW1/src/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.pyenv/versions/3.5.0/lib/python3.5/codecs.py">
+    <entry file="file://$PROJECT_DIR$/Homeworks/HW3/src/regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="319" selection-start-line="319" selection-end-line="319" />
+        <state relative-caret-position="430">
+          <caret line="311" column="32" lean-forward="true" selection-start-line="311" selection-start-column="32" selection-end-line="311" selection-end-column="32" />
+          <folding>
+            <element signature="e#93#102#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Homeworks/HW1/src/titanic.py">
+    <entry file="file://$PROJECT_DIR$/Homeworks/HW2/data/regression_train.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homeworks/HW2/src/regression_train.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/3.5.0/lib/python3.5/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="483" lean-forward="true" selection-start-line="483" selection-end-line="483" />
+        <state relative-caret-position="171">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homeworks/HW2/src/regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="152" column="22" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="22" />
           <folding>
-            <element signature="e#112#123#0" expanded="true" />
+            <element signature="e#93#102#0" expanded="true" />
+            <marker date="1541899096479" expanded="true" signature="7547:7556" ph="..." />
           </folding>
         </state>
       </provider>

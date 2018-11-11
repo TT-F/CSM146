@@ -8,7 +8,7 @@ import numpy as np
 
 # matplotlib libraries
 import matplotlib.pyplot as plt
-
+import time
 ######################################################################
 # classes
 ######################################################################
@@ -110,8 +110,15 @@ class PolynomialRegression() :
         ### ========== TODO : START ========== ###
         # part b: modify to create matrix for simple linear model
         # part g: modify to create matrix for polynomial model
-        Phi = X
+        #Phi = X
         m = self.m_
+
+        Phi = np.ones((n,m+1))
+        for row_num in range(n):
+            power_row = np.arange(m+1)
+            row = np.concatenate(([1] ,X[row_num]))
+            row = np.power(row, power_row)
+            Phi[row_num] = row
         
         ### ========== TODO : END ========== ###
         
@@ -154,13 +161,13 @@ class PolynomialRegression() :
         err_list  = np.zeros((tmax,1))           # errors per iteration
         
         # GD loop
-        for t in xrange(tmax) :
+        for t in range(tmax) :
             ### ========== TODO : START ========== ###
             # part f: update step size
             # change the default eta in the function signature to 'eta=None'
             # and update the line below to your learning rate function
             if eta_input is None :
-                eta = None # change this line
+                eta = 1/(1+t)
             else :
                 eta = eta_input
             ### ========== TODO : END ========== ###
@@ -171,8 +178,9 @@ class PolynomialRegression() :
                 
             # track error
             # hint: you cannot use self.predict(...) to make the predictions
-            y_pred = y # change this line
-            err_list[t] = np.sum(np.power(y - y_pred, 2)) / float(n)                
+            y_pred = np.dot(X, self.coef_)
+            err_list[t] = np.sum(np.power(y - y_pred, 2)) / float(n)
+            self.coef_ = self.coef_ - 2*eta*np.dot(X.transpose(), (y_pred - y))
             ### ========== TODO : END ========== ###
             
             # stop?
@@ -193,7 +201,7 @@ class PolynomialRegression() :
                 plt.draw()
                 plt.pause(0.05) # pause for 0.05 sec
         
-        print 'number of iterations: %d' % (t+1)
+        print ('number of iterations: %d' % (t+1))
         
         return self
     
@@ -220,6 +228,8 @@ class PolynomialRegression() :
         # part e: implement closed-form solution
         # hint: use np.dot(...) and np.linalg.pinv(...)
         #       be sure to update self.coef_ with your solution
+        self.coef_ = np.linalg.pinv(np.dot(X.transpose(), X))
+        self.coef_ = np.dot(np.dot(self.coef_, X.transpose()),y)
         
         ### ========== TODO : END ========== ###
     
@@ -243,7 +253,7 @@ class PolynomialRegression() :
         
         ### ========== TODO : START ========== ###
         # part c: predict y
-        y = None
+        y = np.dot(X, self.coef_)
         ### ========== TODO : END ========== ###
         
         return y
@@ -264,7 +274,7 @@ class PolynomialRegression() :
         """
         ### ========== TODO : START ========== ###
         # part d: compute J(theta)
-        cost = 0
+        cost = sum((self.predict(X)- y)**2)
         ### ========== TODO : END ========== ###
         return cost
     
@@ -307,6 +317,7 @@ class PolynomialRegression() :
 ######################################################################
 
 def main() :
+
     # load data
     train_data = load_data('regression_train.csv')
     test_data = load_data('regression_test.csv')
@@ -315,15 +326,54 @@ def main() :
     
     ### ========== TODO : START ========== ###
     # part a: main code for visualizations
-    print 'Visualizing data...'
-    
+    print ('Visualizing data...')
+    #plot_data(train_data.X, train_data.y)
+    #plot_data(test_data.X, test_data.y)
+
     ### ========== TODO : END ========== ###
     
     
     
     ### ========== TODO : START ========== ###
     # parts b-f: main code for linear regression
-    print 'Investigating linear regression...'
+    print ('Investigating linear regression...')
+    model = PolynomialRegression()
+    #c
+    #linear_regression = PolynomialRegression()
+
+    #linear_regression.coef_ = np.zeros(2)
+    #linear_cost = linear_regression.cost(train_data.X,train_data.y)
+    #print(linear_cost)
+
+    #d
+    # steps = [0.0001,0.001,0.01,0.0407]
+    # for step in steps:
+    #     linear_model = PolynomialRegression()
+    #     start_time = time.time()
+    #     linear_fit = linear_model.fit_GD(train_data.X, train_data.y, eta=step)
+    #     print('time: {}'.format(time.time() - start_time))
+    #     print('step: ', step)
+    #     linear_cost = linear_model.cost(train_data.X, train_data.y)
+    #     print('Cost: ', linear_cost)
+    #     print('Coef: ', linear_fit.coef_)
+
+
+    #e
+    # start = time.time()
+    # model.fit(train_data.X, train_data.y)
+    # print('time: {}'.format(time.time() - start))
+    # print('Coef: ', model.coef_)
+    # cost = model.cost(train_data.X, train_data.y)
+    # print('Cost: ', cost)
+
+    #f
+    start = time.time()
+    model.fit_GD(train_data.X, train_data.y)
+    print('time: {}'.format(time.time() - start))
+    print('Coef: ', model.coef_)
+    cost = model.cost(train_data.X, train_data.y)
+    print('Cost: ', cost)
+
     
     ### ========== TODO : END ========== ###
     
@@ -331,12 +381,21 @@ def main() :
     
     ### ========== TODO : START ========== ###
     # parts g-i: main code for polynomial regression
-    print 'Investigating polynomial regression...'
+    print('Investigating polynomial regression...')
         
     ### ========== TODO : END ========== ###
     
     
-    print "Done!"
+    print ("Done!")
+
+    # print ("test")
+    # train_data = load_data(
+    #     'regression_train.csv'
+    # )
+    # model = PolynomialRegression()
+    # model.coef_ = np.zeros(2)
+    # cost = model.cost(train_data.X, train_data.y)
+    # print ("cost is", cost)
 
 if __name__ == "__main__" :
     main()
