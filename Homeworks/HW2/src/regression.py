@@ -9,6 +9,7 @@ import numpy as np
 # matplotlib libraries
 import matplotlib.pyplot as plt
 import time
+import math
 ######################################################################
 # classes
 ######################################################################
@@ -116,7 +117,7 @@ class PolynomialRegression() :
         Phi = np.ones((n,m+1))
         for row_num in range(n):
             power_row = np.arange(m+1)
-            row = np.concatenate(([1] ,X[row_num]))
+            row = np.concatenate(([1] ,np.repeat(X[row_num], m)))
             row = np.power(row, power_row)
             Phi[row_num] = row
         
@@ -254,6 +255,7 @@ class PolynomialRegression() :
         ### ========== TODO : START ========== ###
         # part c: predict y
         y = np.dot(X, self.coef_)
+        #print("Y predict: ", y)
         ### ========== TODO : END ========== ###
         
         return y
@@ -274,7 +276,7 @@ class PolynomialRegression() :
         """
         ### ========== TODO : START ========== ###
         # part d: compute J(theta)
-        cost = sum((self.predict(X)- y)**2)
+        cost = sum((self.predict(X)-y)**2)
         ### ========== TODO : END ========== ###
         return cost
     
@@ -294,7 +296,9 @@ class PolynomialRegression() :
         """
         ### ========== TODO : START ========== ###
         # part h: compute RMSE
-        error = 0
+        h = self.cost(X,y)
+        n,_ = X.shape()
+        error = math.sqrt(h/n)
         ### ========== TODO : END ========== ###
         return error
     
@@ -338,14 +342,14 @@ def main() :
     # parts b-f: main code for linear regression
     print ('Investigating linear regression...')
     model = PolynomialRegression()
-    #c
-    #linear_regression = PolynomialRegression()
-
-    #linear_regression.coef_ = np.zeros(2)
-    #linear_cost = linear_regression.cost(train_data.X,train_data.y)
-    #print(linear_cost)
-
-    #d
+    # #c
+    # linear_regression = PolynomialRegression()
+    #
+    # linear_regression.coef_ = np.zeros(2)
+    # linear_cost = linear_regression.cost(train_data.X,train_data.y)
+    # print(linear_cost)
+    #
+    # #d
     # steps = [0.0001,0.001,0.01,0.0407]
     # for step in steps:
     #     linear_model = PolynomialRegression()
@@ -356,15 +360,15 @@ def main() :
     #     linear_cost = linear_model.cost(train_data.X, train_data.y)
     #     print('Cost: ', linear_cost)
     #     print('Coef: ', linear_fit.coef_)
-
+    #
 
     #e
-    # start = time.time()
-    # model.fit(train_data.X, train_data.y)
-    # print('time: {}'.format(time.time() - start))
-    # print('Coef: ', model.coef_)
-    # cost = model.cost(train_data.X, train_data.y)
-    # print('Cost: ', cost)
+    start = time.time()
+    model.fit(train_data.X, train_data.y)
+    print('time: {}'.format(time.time() - start))
+    print('Coef: ', model.coef_)
+    cost = model.cost(train_data.X, train_data.y)
+    print('Cost: ', cost)
 
     #f
     start = time.time()
@@ -382,7 +386,24 @@ def main() :
     ### ========== TODO : START ========== ###
     # parts g-i: main code for polynomial regression
     print('Investigating polynomial regression...')
-        
+    train_error = []
+    test_error = []
+
+    poly_model = PolynomialRegression()
+    for i in range(11):
+        poly_model.m_ = i
+        poly_model.fit(train_data.X, train_data.y)
+        train_error.append(poly_model.cost(train_data.X, train_data.y))
+        test_error.append(poly_model.cost(test_data.X, test_data.y))
+
+    x_label = range(11)
+    plt.plot(x_label, train_error, color='red', label='Train Error')
+    plt.plot(x_label, test_error, color='blue', label='Test Error')
+    plt.legend()
+    plt.xlabel('Degree')
+    plt.ylabel('Cost')
+    plt.show()
+
     ### ========== TODO : END ========== ###
     
     
