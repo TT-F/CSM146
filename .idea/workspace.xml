@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="656f5273-da1a-4bd5-a28f-2e675a7b398d" name="Default Changelist" comment="HW3 Added">
+    <list default="true" id="656f5273-da1a-4bd5-a28f-2e675a7b398d" name="Default Changelist" comment="HW2 Finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/HW2/code/data/regression_test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/HW2/code/data/regression_train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/HW2/code/src/regression.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/HW3/cs14618F_hw2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/HW3/data/regression_test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/HW3/data/regression_train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/HW3/src/regression.py" beforeDir="false" />
     </list>
+    <manually-removed-from-ignored>
+      <directory path=".vscode/" />
+      <directory path=".idea/" />
+    </manually-removed-from-ignored>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CSM146$titanic.coverage" NAME="titanic Coverage Results" MODIFIED="1541884776929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homeworks/HW1/src" />
-    <SUITE FILE_PATH="coverage/CSM146$regression__1_.coverage" NAME="regression (1) Coverage Results" MODIFIED="1541899098405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homeworks/HW2/src" />
+    <SUITE FILE_PATH="coverage/CSM146$regression__1_.coverage" NAME="regression (1) Coverage Results" MODIFIED="1541905064082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homeworks/HW2/src" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -39,7 +41,7 @@
     <session id="297536881">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="3" />
@@ -50,12 +52,14 @@
         <counts>
           <entry key="csv" value="3" />
           <entry key="md" value="1" />
+          <entry key="png" value="1" />
           <entry key="py" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="2" />
+          <entry key="Image" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="12" />
@@ -65,15 +69,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="153" />
-          <entry key="py" value="4288" />
+          <entry key="py" value="4740" />
           <entry key="regression (1)" value="55" />
-          <entry key="txt" value="29" />
+          <entry key="txt" value="108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="29" />
-          <entry key="Python" value="4496" />
+          <entry key="PLAIN_TEXT" value="108" />
+          <entry key="Python" value="4948" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -87,11 +91,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Homeworks/HW2/src/regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="152" column="22" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="22" />
+            <state relative-caret-position="-425">
+              <caret line="347" column="43" selection-start-line="344" selection-end-line="363" />
               <folding>
                 <element signature="e#93#102#0" expanded="true" />
-                <marker date="1541899096479" expanded="true" signature="7547:7556" ph="..." />
+                <marker date="1541915576606" expanded="true" signature="7573:7582" ph="..." />
+                <marker date="1541915576606" expanded="true" signature="10828:11297" ph="..." />
               </folding>
             </state>
           </provider>
@@ -185,21 +190,7 @@
               <item name="CSM146" type="462c0819:PsiDirectoryNode" />
               <item name="Homeworks" type="462c0819:PsiDirectoryNode" />
               <item name="HW2" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSM146" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSM146" type="462c0819:PsiDirectoryNode" />
-              <item name="Homeworks" type="462c0819:PsiDirectoryNode" />
-              <item name="HW2" type="462c0819:PsiDirectoryNode" />
               <item name="Plots" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSM146" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSM146" type="462c0819:PsiDirectoryNode" />
-              <item name="Homeworks" type="462c0819:PsiDirectoryNode" />
-              <item name="HW2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CSM146" type="b2602c69:ProjectViewProjectNode" />
@@ -384,7 +375,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541878708633</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Directory Clean up + HW2 linear regression finished">
+      <created>1541899188727</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1541899188727</updated>
+    </task>
+    <task id="LOCAL-00004" summary="HW2 Finished">
+      <created>1541915935146</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1541915935146</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -398,15 +403,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49760765" visible="true" weight="0.14652015" />
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.14468865" />
       <window_info id="Favorites" order="2" sideWeight="0.50239235" side_tool="true" weight="0.14468865" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.498779" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="2" sideWeight="0.508547" visible="true" weight="0.32941177" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.491453" side_tool="true" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="2" sideWeight="0.50793654" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.4920635" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4993895" weight="0.32941177" />
@@ -419,7 +423,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49920255" weight="0.32967034" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49920255" visible="true" weight="0.32967034" />
       <window_info anchor="right" x="0" y="0" width="370" height="827" id="Documentation" order="4" sideWeight="0.50079745" side_tool="true" weight="0.32967034" />
       <window_info anchor="right" id="Database" order="5" weight="0.32967034" />
     </layout>
@@ -469,7 +473,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Coding Part Finished" />
     <MESSAGE value="HW3 Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW3 Added" />
+    <MESSAGE value="Directory Clean up + HW2 linear regression finished" />
+    <MESSAGE value="HW2 Finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW2 Finished" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Notes/Lecture_10_1.md">
@@ -530,13 +547,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Homeworks/HW2/Plots/Poly.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Homeworks/HW2/src/regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="152" column="22" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="22" />
+        <state relative-caret-position="-425">
+          <caret line="347" column="43" selection-start-line="344" selection-end-line="363" />
           <folding>
             <element signature="e#93#102#0" expanded="true" />
-            <marker date="1541899096479" expanded="true" signature="7547:7556" ph="..." />
+            <marker date="1541915576606" expanded="true" signature="7573:7582" ph="..." />
+            <marker date="1541915576606" expanded="true" signature="10828:11297" ph="..." />
           </folding>
         </state>
       </provider>
